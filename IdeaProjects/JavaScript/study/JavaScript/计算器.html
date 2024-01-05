@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (; ;) {
+            let ch = prompt("请选择加减乘除,输入q退出")
+            if (ch === "q") {
+                break
+            }
+            let num1 = +prompt("请你输入第一个数字")
+            let num2 = +prompt("请你输入第二个数字")
+            if (ch === "+") {
+                alert(`两数相加为${num1 + num2}`)
+            } else if (ch === "-") {
+                alert(`两数相减为${num1 - num2}`)
+            } else if (ch === "*") {
+                alert(`两数相乘为${num1 * num2}`)
+            } else if (ch === "/") {
+                alert(`两数相除为${num1 / num2}`)
+            }
+        }
+        document.write("已退出")
+    </script>
+</body>
+
+</html>

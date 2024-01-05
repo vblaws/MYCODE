@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .box {
+            display: flex;
+            width: 700px;
+            height: 300px;
+            border-left: 1px solid pink;
+            border-bottom: 1px solid pink;
+            margin: 50px auto;
+            justify-content: space-around;
+            align-items: flex-end;
+            text-align: center;
+        }
+
+        .box>div {
+            display: flex;
+            width: 50px;
+            background-color: pink;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .box div span {
+            margin-top: -20px;
+        }
+
+        .box div h4 {
+            margin-bottom: -35px;
+            width: 70px;
+            margin-left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        let arr = []
+        for (let i = 0; i < 4; i++) {
+            arr[i] = +prompt(`请输入第${i + 1}季度数据`)
+        }
+        //console.log(arr)
+        //盒子开头
+        document.write("<div class='box'>")
+        //盒子中间
+        for (let j = 0; j < 4; j++) {
+            document.write(`
+                <div style="height:${arr[j]}px">
+                    <span>${arr[j]}</span>
+                    <h4>第${j + 1}季度</h4>
+                </div>`)
+        }
+        //盒子结束
+        document.write("</div>")
+    </script>
+</body>
+
+</html>

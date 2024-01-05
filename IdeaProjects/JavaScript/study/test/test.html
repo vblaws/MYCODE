@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let count = 0
+        for (; ;) {
+            let password = +prompt("请输入取款密码")
+            count++
+            if (password === 111111) {
+                let money = +prompt("请输入取款金额")
+                if (money >= 100 && money <= 1000) {
+                    console.log(`你取了${money}元`)
+                    console.log(`交易完成，请取卡`)
+                    break
+                }
+
+            } else {
+                console.log(`第${count}次输入错误`)
+                if (count === 3) {
+                    break
+                }
+                continue
+            }
+        }
+        let sum = 1
+        for (let i = 1; i <= 7; i++) {
+            sum = sum * 2 + 1
+        }
+        console.log("刚开始有" + sum + "个桃子")
+
+        let zhongliang = 0
+        for (let i = 1; i <= 64; i++) {
+            if (i == 1) {
+                zhongliang = zhongliang + 0.0001
+            } else {
+                zhongliang += zhongliang * i
+            }
+        }
+        console.log(zhongliang)
+
+
+
+        let money = 100000
+        let count1 = 0
+        for (; ;) {
+
+            if (money > 50000) {
+                money -= money * 0.05
+                count1++
+            } else {
+                money -= 5000
+                count1++
+            }
+            if (money == 0) {
+                break
+            }
+        }
+        document.writer(count1)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let money = 1000
+        while (true) {
+            let num = +prompt("请输入你需要的功能,输入4推出超")
+            if (num === 4) {
+                break
+            }
+            switch (num) {
+                case 1:
+                    let cun = +prompt("请输入你要存取的金额")
+                    money = money + cun
+                    break;
+                case 2:
+                    let qu = +prompt("请输入你要取的金额")
+                    money = money - qu
+                    break
+                case 3:
+                    alert(`你的余额为${money}`)
+                    break
+            }
+        }
+        document.write("退出成功")
+    </script>
+</body>
+
+</html>
