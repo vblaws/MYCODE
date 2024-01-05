@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt("请输入你的高考成绩")
+        if (num > 700) {
+
+            console.log("恭喜考入黑马程序员")
+        } else {
+            console.log("对不起，你没考上")
+        }
+
+        let year = +prompt("请输入今年的年份")
+        if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+
+            alert(`${year}年是闰年`)
+        } else {
+            alert(`${year}不是闰年`)
+        }
+        let num1 = +prompt("请输入第一个数字")
+        let num2 = +prompt("请输入第二个个数字")
+        alert(num1 > num2 ? `最大值为${num1}` : `最大值为${num2}`)
+    </script>
+</body>
+
+</html>
