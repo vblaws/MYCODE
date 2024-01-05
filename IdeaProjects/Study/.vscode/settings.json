@@ -1,9 +1,0 @@
-{
-    "editor.columnSelection": true,
-    "files.autoGuessEncoding": true,
-    "workbench.list.smoothScrolling": true,
-    "editor.tabSize": 4,
-    "files.watcherExclude": {
-        "**/target": true
-    }
-}
