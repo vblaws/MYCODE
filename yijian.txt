@@ -1,1 +1,1 @@
-wget http://fishros.com/install -O fishros && . fishros
+get http://fishros.com/install -O fishros && . fishros
