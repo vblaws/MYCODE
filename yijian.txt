@@ -1,1 +1,2 @@
-get http://fishros.com/install -O fishros && . fishros
+wget http://fishros.com/install -O fishros && . fishros
+https://18comic.tw/vodplay/317057-1-1.html
